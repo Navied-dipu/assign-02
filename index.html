@@ -1,19 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+    </style>
     <title>TechWave</title>
-</head>
-<body>
+  </head>
+  <body class="bg-[#1A0B2E] text-white max-w-7xl font-inter mx-auto">
     <!-- navbar -->
-    <nav>
-        <h1>TechWave</h1>
-        <!-- <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul> -->
-</body>
+    <nav
+      class="flex justify-between items-center px-10 py-4 lg:px-25 lg:py-4 mx-auto"
+    >
+      <h1 class="text-4xl">
+        Tech<span
+          class="font-bold bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent"
+          >Wave</span
+        >
+      </h1>
+      <ul class="hidden lg:flex justify-between space-x-6">
+        <li><a href="#about">About</a></li>
+        <li><a href="#episodes">Episodes</a></li>
+        <li><a href="#host">Host</a></li>
+      </ul>
+      <button
+        class="px-1 py-2 lg:px-3 lg:py-2 bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-full text-white font-bold hidden lg:flex items-center justify-center space-x-2"
+      >
+        Subscribe <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </nav>
+    <!-- hero section   -->
+    <section
+      class="relative w-full h-[70vh] sm:h-[80vh] md:h-[90vh] lg:h-screen bg-[url('./assets/hero-bg.png')] bg-center bg-cover flex justify-center items-center "
+    >
+      <div
+        style="background-image: url(./assets/hero-circle.png)"
+        class="absolute w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] bg-no-repeat bg-center bg-cover flex lg:flex justify-center items-center mx-auto"
+      >
+        <img src="./assets/microphone.png" class="w-20" alt="" />
+        
+      </div>
+      <button class="relative bottom-18 left-16 lg:bottom-30 lg:left-25 px-1 text-sm text-black bg-[#00FF88] border-0 rounded-xl">NEW</button>
+     <div class=" absolute text-center text-white bottom-0 lg:bottom-5">
+         <h2 class="text-4xl font-bold">TechWave</h2>
+      <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
+      <!-- button -->
+       <div class=" flex justify-center mt-4  gap-3">
+        <button class="p-2 bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-full text-white font-bold flex items-center justify-center gap-2 " > <img src="./assets/spotify.png" alt="">Listen on Spotify</button>
+        <button class="p-2 border-1 border-[#00FF88] rounded-full text-[#00FF88] font-bold flex items-center justify-center  gap-2" > <img  src="./assets/message.png" alt=""> Listen on Spotify</button> 
+       </div>
+     </div>
+    </section>
+  </body>
 </html>
